@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Termos de Serviço — MunhozFilas Bot</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0d0f14;
+    --surface: #13161e;
+    --border: #1e2330;
+    --accent: #00e5fb;
+    --accent-dim: rgba(0,229,251,0.10);
+    --text: #e8eaf0;
+    --muted: #7a7f99;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Mono', monospace;
+    font-size: 15px;
+    line-height: 1.75;
+    min-height: 100vh;
+  }
+  body::before {
+    content: '';
+    position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+    opacity: 0.35;
+  }
+  .wrap { max-width: 780px; margin: 0 auto; padding: 64px 24px 96px; position: relative; z-index: 1; }
+  header { margin-bottom: 56px; }
+  .badge {
+    display: inline-block;
+    background: var(--accent-dim);
+    color: var(--accent);
+    font-family: 'Syne', sans-serif;
+    font-size: 11px; font-weight: 700;
+    letter-spacing: 0.15em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 4px; margin-bottom: 20px;
+  }
+  h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(32px, 5vw, 52px);
+    font-weight: 800; line-height: 1.1; color: #fff;
+    letter-spacing: -0.02em; margin-bottom: 16px;
+  }
+  h1 span { color: var(--accent); }
+  .meta { color: var(--muted); font-size: 13px; border-left: 2px solid var(--border); padding-left: 12px; }
+  .divider { border: none; border-top: 1px solid var(--border); margin: 40px 0; }
+  section { margin-bottom: 44px; }
+  h2 {
+    font-family: 'Syne', sans-serif; font-size: 18px; font-weight: 700;
+    color: #fff; margin-bottom: 12px; display: flex; align-items: center; gap: 10px;
+  }
+  h2 .num {
+    background: var(--accent-dim); color: var(--accent);
+    font-size: 12px; font-weight: 700; padding: 2px 8px;
+    border-radius: 3px; font-family: 'DM Mono', monospace;
+  }
+  p { color: #b0b4cc; margin-bottom: 10px; }
+  ul { padding-left: 20px; color: #b0b4cc; }
+  ul li { margin-bottom: 6px; }
+  .box {
+    background: var(--surface); border: 1px solid var(--border);
+    border-left: 3px solid var(--accent); border-radius: 6px;
+    padding: 16px 20px; margin-top: 12px; color: #b0b4cc; font-size: 14px;
+  }
+  .warn {
+    background: rgba(255,68,68,0.07); border: 1px solid rgba(255,68,68,0.2);
+    border-left: 3px solid #ff4444; border-radius: 6px;
+    padding: 16px 20px; margin-top: 12px; color: #b0b4cc; font-size: 14px;
+  }
+  footer {
+    margin-top: 72px; padding-top: 24px; border-top: 1px solid var(--border);
+    text-align: center; color: var(--muted); font-size: 13px;
+  }
+  footer strong { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="badge">Documento Legal</div>
+    <h1>Termos de<br><span>Serviço</span></h1>
+    <p class="meta">MunhozFilas Bot &nbsp;·&nbsp; Munhoz BOTS &nbsp;·&nbsp; Última atualização: Junho de 2026</p>
+  </header>
+
+  <section>
+    <h2><span class="num">01</span> Aceitação dos Termos</h2>
+    <p>Ao adicionar o bot <strong>MunhozFilas</strong> em seu servidor Discord ou interagir com ele como usuário, você declara ter lido, compreendido e concordado com estes Termos de Serviço.</p>
+    <p>Caso não concorde com qualquer disposição deste documento, você deve remover o bot do servidor ou cessar seu uso imediatamente.</p>
+  </section>
+
+  <hr class="divider">
+
+  <section>
+    <h2><span class="num">02</span> Sobre o Bot</h2>
+    <p>O <strong>MunhozFilas</strong> é um bot para Discord voltado à organização de comunidades de jogos, oferecendo:</p>
+    <ul>
+      <li><strong>Sistema de Filas e Duelos</strong> — abertura, confirmação e encerramento de partidas com valores financeiros</li>
+      <li><strong>Gestão de Mediadores</strong> — painel de escala, tempo de serviço e estatísticas de desempenho</li>
+      <li><strong>Apostas e Análises</strong> — painel analítico de filas e histórico de apostas</li>
+      <li><strong>Sistema de Tickets</strong> — atendimento e suporte dentro do servidor</li>
+      <li><strong>Painel PIX</strong> — registro e gerenciamento de chaves de pagamento</li>
+      <li><strong>Painel Streamer</strong> — sistema de filas dedicado a streamers</li>
+      <li><strong>Blacklist</strong> — controle de jogadores restritos no servidor</li>
+      <li><strong>Loja com Coins</strong> — sistema de economia interna e prêmios</li>
+      <li><strong>Roleta e Sorteios</strong> — prêmios por sorte</li>
+      <li><strong>Rastreamento de Convites</strong> e autorole automático</li>
+    </ul>
+    <div class="box">
+      O MunhozFilas opera em modo <strong>multi-servidor</strong>: cada servidor possui configuração independente, armazenada separadamente no banco de dados.
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section>
+    <h2><span class="num">03</span> Uso Aceitável</h2>
+    <p>Ao utilizar o MunhozFilas, você concorda em <strong>não</strong>:</p>
+    <ul>
+      <li>Tentar explorar, hackear ou manipular o bot ou seus sistemas internos</li>
+      <li>Usar o bot para assediar, ameaçar ou prejudicar outros usuários</li>
+      <li>Tentar contornar sistemas de blacklist, mediação ou punições aplicadas</li>
+      <li>Fraude em apostas, filas ou transações financeiras mediadas pelo bot</li>
+      <li>Usar o bot para atividades que violem os Termos de Serviço do Discord</li>
+      <li>Realizar engenharia reversa, cópia ou distribuição não autorizada do bot</li>
+      <li>Inserir dados falsos de pagamento (chaves PIX inválidas ou fraudulentas)</li>
+    </ul>
+    <div class="warn">
+      Violações podem resultar em bloqueio permanente do acesso ao bot, remoção do servidor e, quando aplicável, comunicação às autoridades competentes.
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section>
+    <h2><span class="num">04</span> Sistema Financeiro e Apostas</h2>
+    <p>O MunhozFilas oferece ferramentas para organização de duelos e apostas com valores reais. É importante compreender que:</p>
+    <ul>
+      <li>O bot <strong>não processa pagamentos diretamente</strong> — ele apenas registra chaves PIX e facilita a comunicação entre as partes</li>
+      <li>Os administradores do servidor são responsáveis pela condução justa das apostas e pelo pagamento entre os jogadores</li>
+      <li>A <strong>Munhoz BOTS não se responsabiliza</strong> por disputas financeiras entre usuários, pagamentos não realizados ou fraudes entre participantes</li>
+      <li>O uso das ferramentas financeiras do bot implica que você entende os riscos envolvidos em transações entre particulares</li>
+    </ul>
+    <div class="box">
+      Recomendamos que os administradores de servidor estabeleçam regras claras sobre apostas antes de utilizar o sistema financeiro do bot.
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section>
+    <h2><span class="num">05</span> Canal de Divulgação Automático</h2>
+    <p>Ao adicionar o bot ao servidor, após um período inicial, o MunhozFilas pode criar automaticamente um canal de divulgação (<strong>🩵・crie-sua-org-grátis</strong>) com informações sobre o serviço.</p>
+    <p>Administradores do servidor podem excluir esse canal a qualquer momento sem impacto no funcionamento do bot.</p>
+  </section>
+
+  <hr class="divider">
+
+  <section>
+    <h2><span class="num">06</span> Responsabilidades do Administrador do Servidor</h2>
+    <p>Ao adicionar o MunhozFilas ao seu servidor, o administrador responsável concorda em:</p>
+    <ul>
+      <li>Configurar o bot adequadamente via <code>/config-munhoz-filas</code></li>
+      <li>Garantir que os membros do servidor conheçam as regras de uso do bot</li>
+      <li>Moderar o uso das funcionalidades financeiras e de apostas</li>
+      <li>Não usar as ferramentas do bot para fins ilegais ou prejudiciais</li>
+    </ul>
+  </section>
+
+  <hr class="divider">
+
+  <section>
+    <h2><span class="num">07</span> Disponibilidade do Serviço</h2>
+    <p>Nos esforçamos para manter o MunhozFilas disponível de forma contínua, porém não garantimos 100% de uptime. Interrupções podem ocorrer por manutenção, instabilidades do Discord ou falhas em serviços de terceiros.</p>
+    <p>Não nos responsabilizamos por perdas financeiras ou de dados decorrentes de indisponibilidade do bot.</p>
+  </section>
+
+  <hr class="divider">
+
+  <section>
+    <h2><span class="num">08</span> Limitação de Responsabilidade</h2>
+    <p>O MunhozFilas é fornecido "como está". A Munhoz BOTS não se responsabiliza por:</p>
+    <ul>
+      <li>Danos indiretos, perda de dados ou prejuízos financeiros entre usuários</li>
+      <li>Resultados de apostas e duelos organizados com o auxílio do bot</li>
+      <li>Conteúdo gerado ou ações realizadas por administradores e usuários</li>
+      <li>Mau uso das funcionalidades por parte dos administradores do servidor</li>
+    </ul>
+  </section>
+
+  <hr class="divider">
+
+  <section>
+    <h2><span class="num">09</span> Modificações dos Termos</h2>
+    <p>Podemos atualizar estes Termos a qualquer momento. Alterações relevantes serão comunicadas no servidor oficial da Munhoz BOTS no Discord (<strong>discord.gg/munhozsystems</strong>). O uso continuado do bot após as alterações constitui aceitação dos novos termos.</p>
+  </section>
+
+  <hr class="divider">
+
+  <section>
+    <h2><span class="num">10</span> Contato</h2>
+    <p>Para dúvidas, suporte ou contestações, entre em contato pelo servidor oficial: <strong>discord.gg/munhozsystems</strong>.</p>
+  </section>
+
+  <footer>
+    <p>© 2026 <strong>Munhoz BOTS</strong> — MunhozFilas Bot. Todos os direitos reservados.</p>
+    <p style="margin-top:8px; font-size:12px;">Este documento cumpre os requisitos de verificação de aplicativos do Discord.</p>
+  </footer>
+</div>
+</body>
+</html>
