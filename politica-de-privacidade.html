@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de Privacidade — MunhozFilas Bot</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0d0f14;
+    --surface: #13161e;
+    --border: #1e2330;
+    --accent: #57f287;
+    --accent-dim: rgba(87,242,135,0.10);
+    --text: #e8eaf0;
+    --muted: #7a7f99;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Mono', monospace;
+    font-size: 15px; line-height: 1.75; min-height: 100vh;
+  }
+  body::before {
+    content: '';
+    position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+    opacity: 0.35;
+  }
+  .wrap { max-width: 780px; margin: 0 auto; padding: 64px 24px 96px; position: relative; z-index: 1; }
+  header { margin-bottom: 56px; }
+  .badge {
+    display: inline-block; background: var(--accent-dim); color: var(--accent);
+    font-family: 'Syne', sans-serif; font-size: 11px; font-weight: 700;
+    letter-spacing: 0.15em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 4px; margin-bottom: 20px;
+  }
+  h1 {
+    font-family: 'Syne', sans-serif; font-size: clamp(32px, 5vw, 52px);
+    font-weight: 800; line-height: 1.1; color: #fff;
+    letter-spacing: -0.02em; margin-bottom: 16px;
+  }
+  h1 span { color: var(--accent); }
+  .meta { color: var(--muted); font-size: 13px; border-left: 2px solid var(--border); padding-left: 12px; }
+  .divider { border: none; border-top: 1px solid var(--border); margin: 40px 0; }
+  section { margin-bottom: 44px; }
+  h2 {
+    font-family: 'Syne', sans-serif; font-size: 18px; font-weight: 700;
+    color: #fff; margin-bottom: 12px; display: flex; align-items: center; gap: 10px;
+  }
+  h2 .num {
+    background: var(--accent-dim); color: var(--accent);
+    font-size: 12px; font-weight: 700; padding: 2px 8px;
+    border-radius: 3px; font-family: 'DM Mono', monospace;
+  }
+  p { color: #b0b4cc; margin-bottom: 10px; }
+  ul { padding-left: 20px; color: #b0b4cc; }
+  ul li { margin-bottom: 6px; }
+  .box {
+    background: var(--surface); border: 1px solid var(--border);
+    border-left: 3px solid var(--accent); border-radius: 6px;
+    padding: 16px 20px; margin-top: 12px; color: #b0b4cc; font-size: 14px;
+  }
+  .data-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 14px;
+  }
+  .data-item {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 6px; padding: 12px 16px; font-size: 13px;
+  }
+  .data-item .label {
+    color: var(--accent); font-weight: 500; font-size: 11px;
+    letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 4px;
+  }
+  .data-item .value { color: #b0b4cc; }
+  .db-tag {
+    display: inline-block; background: rgba(87,242,135,0.08);
+    color: var(--accent); font-size: 10px; padding: 1px 6px;
+    border-radius: 3px; margin-left: 6px; vertical-align: middle;
+    font-family: 'DM Mono', monospace; letter-spacing: 0.05em;
+  }
+  footer {
+    margin-top: 72px; padding-top: 24px; border-top: 1px solid var(--border);
+    text-align: center; color: var(--muted); font-size: 13px;
+  }
+  footer strong { color: var(--accent); }
+  @media (max-width: 520px) { .data-grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="badge">Documento Legal</div>
+    <h1>Política de<br><span>Privacidade</span></h1>
+    <p class="meta">MunhozFilas Bot &nbsp;·&nbsp; Munhoz BOTS &nbsp;·&nbsp; Última atualização: Junho de 2026</p>
+  </header>
+
+  <section>
+    <h2><span class="num">01</span> Introdução</h2>
+    <p>Esta Política de Privacidade descreve como o bot <strong>MunhozFilas</strong>, desenvolvido pela <strong>Munhoz BOTS</strong>, coleta, utiliza, armazena e protege os dados dos usuários ao operar em servidores Discord.</p>
+    <p>Ao utilizar o bot, você concorda com as práticas descritas neste documento. Esta política aplica-se a todos os usuários e administradores de servidores onde o MunhozFilas está instalado.</p>
+  </section>
+
+  <hr class="divider">
+
+  <section>
+    <h2><span class="num">02</span> Dados Coletados</h2>
+    <p>O MunhozFilas coleta apenas os dados necessários para o funcionamento de seus sistemas. Abaixo estão todos os tipos de dados armazenados, e em qual banco de dados:</p>
+
+    <div class="data-grid">
+      <div class="data-item">
+        <div class="label">Identificadores Discord <span class="db-tag">SQLite + MongoDB</span></div>
+        <div class="value">IDs de usuário, servidor e canal — utilizados para identificação interna</div>
+      </div>
+      <div class="data-item">
+        <div class="label">Estatísticas de Jogador <span class="db-tag">SQLite</span></div>
+        <div class="value">Vitórias, derrotas, winrate, sequências, histórico de duelos e apostas</div>
+      </div>
+      <div class="data-item">
+        <div class="label">Dados de Mediador <span class="db-tag">SQLite</span></div>
+        <div class="value">Tempo de serviço, escala ativa, estatísticas de partidas mediadas</div>
+      </div>
+      <div class="data-item">
+        <div class="label">Chave PIX <span class="db-tag">SQLite</span></div>
+        <div class="value">Chave de pagamento cadastrada voluntariamente pelo usuário para recebimento</div>
+      </div>
+      <div class="data-item">
+        <div class="label">Histórico de Apostas <span class="db-tag">SQLite</span></div>
+        <div class="value">Logs de apostas, valores envolvidos, resultados e partes participantes</div>
+      </div>
+      <div class="data-item">
+        <div class="label">Blacklist <span class="db-tag">SQLite</span></div>
+        <div class="value">ID do usuário, motivo da restrição e data de inclusão na blacklist do servidor</div>
+      </div>
+      <div class="data-item">
+        <div class="label">Tickets <span class="db-tag">SQLite</span></div>
+        <div class="value">ID do ticket, canal associado e histórico de atendimentos abertos</div>
+      </div>
+      <div class="data-item">
+        <div class="label">Convites <span class="db-tag">SQLite</span></div>
+        <div class="value">Registro de convites usados, quem convidou quem, para fins de moderação</div>
+      </div>
+      <div class="data-item">
+        <div class="label">Coins e Loja <span class="db-tag">SQLite</span></div>
+        <div class="value">Saldo de moedas internas e itens adquiridos na loja do servidor</div>
+      </div>
+      <div class="data-item">
+        <div class="label">Dados de Streamer <span class="db-tag">SQLite</span></div>
+        <div class="value">Perfil no sistema de filas de streamer e eventuais bloqueios</div>
+      </div>
+      <div class="data-item">
+        <div class="label">Configuração do Servidor <span class="db-tag">MongoDB</span></div>
+        <div class="value">IDs de canais, cargos, cores e preferências configuradas pelo administrador</div>
+      </div>
+      <div class="data-item">
+        <div class="label">Eventos do Bot <span class="db-tag">SQLite</span></div>
+        <div class="value">Registro de eventos internos (entradas, saídas, ações automáticas) por timestamp</div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section>
+    <h2><span class="num">03</span> Como Usamos os Dados</h2>
+    <p>Os dados coletados são utilizados exclusivamente para:</p>
+    <ul>
+      <li>Operar as funcionalidades do bot (filas, duelos, apostas, tickets, loja, etc.)</li>
+      <li>Exibir estatísticas de jogadores e mediadores dentro do servidor</li>
+      <li>Manter histórico de apostas e duelos para resolução de disputas</li>
+      <li>Facilitar a comunicação de pagamentos via PIX entre os usuários</li>
+      <li>Moderar o servidor (blacklist, convites, autorole)</li>
+      <li>Configurar e personalizar o bot por servidor (multi-guild)</li>
+    </ul>
+    <div class="box">
+      Não vendemos, alugamos ou compartilhamos seus dados com terceiros para fins comerciais ou publicitários. Os dados são acessados apenas pela equipe técnica da Munhoz BOTS.
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section>
+    <h2><span class="num">04</span> Chave PIX e Dados Financeiros</h2>
+    <p>Ao registrar uma chave PIX no bot, você está fornecendo voluntariamente essa informação para facilitar o recebimento de pagamentos de outros usuários do seu servidor.</p>
+    <ul>
+      <li>A chave PIX é armazenada no banco de dados local do servidor (SQLite)</li>
+      <li>Ela é exibida apenas para usuários com permissão dentro do servidor configurado</li>
+      <li>A Munhoz BOTS <strong>não acessa, processa nem transfere valores financeiros</strong> — o bot apenas armazena e exibe a chave cadastrada</li>
+      <li>Você pode solicitar a exclusão da sua chave PIX a qualquer momento ao administrador do servidor</li>
+    </ul>
+  </section>
+
+  <hr class="divider">
+
+  <section>
+    <h2><span class="num">05</span> Armazenamento e Segurança</h2>
+    <p>Os dados do MunhozFilas são armazenados em dois sistemas:</p>
+    <ul>
+      <li><strong>SQLite</strong> — banco de dados local na instância do bot, para dados operacionais por servidor</li>
+      <li><strong>MongoDB Atlas</strong> — banco de dados em nuvem com autenticação e criptografia em trânsito, para configurações de servidores</li>
+    </ul>
+    <p>Adotamos medidas técnicas e organizacionais para proteger os dados contra acesso não autorizado. Apenas membros autorizados da equipe Munhoz BOTS têm acesso direto aos bancos de dados.</p>
+  </section>
+
+  <hr class="divider">
+
+  <section>
+    <h2><span class="num">06</span> Isolamento por Servidor</h2>
+    <p>O MunhozFilas opera em modo multi-servidor. Isso significa que:</p>
+    <ul>
+      <li>Cada servidor possui seus dados armazenados de forma <strong>completamente independente</strong></li>
+      <li>Dados de um servidor <strong>não são acessíveis</strong> por membros ou administradores de outro servidor</li>
+      <li>Configurações, blacklists, apostas e stats são exclusivos de cada servidor</li>
+    </ul>
+  </section>
+
+  <hr class="divider">
+
+  <section>
+    <h2><span class="num">07</span> Retenção de Dados</h2>
+    <p>Os dados são mantidos enquanto o bot estiver ativo no servidor. Após a remoção do bot ou solicitação de exclusão pelo administrador, os dados podem ser mantidos por até <strong>30 dias</strong> antes da exclusão definitiva.</p>
+    <p>Dados de histórico de apostas e duelos podem ser mantidos por períodos maiores para fins de auditoria e resolução de disputas, conforme necessário.</p>
+  </section>
+
+  <hr class="divider">
+
+  <section>
+    <h2><span class="num">08</span> Seus Direitos</h2>
+    <p>Você tem o direito de:</p>
+    <ul>
+      <li><strong>Acesso:</strong> solicitar quais dados seus estão armazenados</li>
+      <li><strong>Correção:</strong> solicitar a correção de dados incorretos</li>
+      <li><strong>Exclusão:</strong> solicitar a remoção dos seus dados pessoais</li>
+      <li><strong>Portabilidade:</strong> solicitar uma cópia dos seus dados em formato legível</li>
+    </ul>
+    <p>Para exercer qualquer um desses direitos, entre em contato pelo servidor oficial da Munhoz BOTS: <strong>discord.gg/munhozsystems</strong>.</p>
+  </section>
+
+  <hr class="divider">
+
+  <section>
+    <h2><span class="num">09</span> Canal de Divulgação Automático</h2>
+    <p>Ao adicionar o bot, após um período inicial de espera, o MunhozFilas pode criar um canal de divulgação automático no servidor. Esse canal contém apenas informações públicas sobre o serviço e não coleta nenhum dado dos membros.</p>
+    <p>O administrador pode excluir esse canal a qualquer momento.</p>
+  </section>
+
+  <hr class="divider">
+
+  <section>
+    <h2><span class="num">10</span> Menores de Idade</h2>
+    <p>O MunhozFilas não coleta intencionalmente dados de menores de 13 anos (ou a idade mínima exigida pelo Discord em sua região). Ao usar o bot, você confirma atender aos requisitos de idade da plataforma Discord.</p>
+    <p>Dado que o bot possui funcionalidades financeiras (apostas, PIX), recomendamos que apenas maiores de 18 anos utilizem esses sistemas, conforme a legislação brasileira.</p>
+  </section>
+
+  <hr class="divider">
+
+  <section>
+    <h2><span class="num">11</span> Alterações nesta Política</h2>
+    <p>Podemos atualizar esta Política de Privacidade periodicamente. Mudanças relevantes serão comunicadas no servidor oficial da Munhoz BOTS. O uso continuado do bot após as alterações implica aceitação da nova política.</p>
+  </section>
+
+  <hr class="divider">
+
+  <section>
+    <h2><span class="num">12</span> Contato</h2>
+    <p>Para dúvidas, solicitações de dados ou exercício dos seus direitos de privacidade, entre em contato pelo servidor oficial: <strong>discord.gg/munhozsystems</strong>.</p>
+  </section>
+
+  <footer>
+    <p>© 2026 <strong>Munhoz BOTS</strong> — MunhozFilas Bot. Todos os direitos reservados.</p>
+    <p style="margin-top:8px; font-size:12px;">Este documento cumpre os requisitos de verificação de aplicativos do Discord.</p>
+  </footer>
+</div>
+</body>
+</html>
