@@ -107,7 +107,7 @@
 
   <section>
     <h2><span class="num">02</span> Dados Coletados</h2>
-    <p>O MunhozFilas coleta apenas os dados necessários para o funcionamento de seus sistemas. Abaixo estão todos os tipos de dados armazenados, e em qual banco de dados:</p>
+    <p>O MunhozFilas coleta apenas os dados necessários para o funcionamento de seus sistemas. Abaixo estão todos os tipos de dados armazenados e em qual banco de dados:</p>
 
     <div class="data-grid">
       <div class="data-item">
@@ -120,11 +120,11 @@
       </div>
       <div class="data-item">
         <div class="label">Dados de Mediador <span class="db-tag">SQLite</span></div>
-        <div class="value">Tempo de serviço, escala ativa, estatísticas de partidas mediadas</div>
+        <div class="value">Tempo de serviço, escala ativa, estatísticas de partidas mediadas e chave PIX cadastrada para recebimentos</div>
       </div>
       <div class="data-item">
-        <div class="label">Chave PIX <span class="db-tag">SQLite</span></div>
-        <div class="value">Chave de pagamento cadastrada voluntariamente pelo usuário para recebimento</div>
+        <div class="label">Chave PIX do Usuário <span class="db-tag">SQLite</span></div>
+        <div class="value">Chave de pagamento cadastrada voluntariamente pelo usuário para recebimento de valores de apostas</div>
       </div>
       <div class="data-item">
         <div class="label">Histórico de Apostas <span class="db-tag">SQLite</span></div>
@@ -132,7 +132,7 @@
       </div>
       <div class="data-item">
         <div class="label">Blacklist <span class="db-tag">SQLite</span></div>
-        <div class="value">ID do usuário, motivo da restrição e data de inclusão na blacklist do servidor</div>
+        <div class="value">ID do usuário, motivo da restrição, provas e data de inclusão na blacklist do servidor</div>
       </div>
       <div class="data-item">
         <div class="label">Tickets <span class="db-tag">SQLite</span></div>
@@ -140,19 +140,19 @@
       </div>
       <div class="data-item">
         <div class="label">Convites <span class="db-tag">SQLite</span></div>
-        <div class="value">Registro de convites usados, quem convidou quem, para fins de moderação</div>
+        <div class="value">Registro de convites usados e quem convidou quem, para fins de moderação</div>
       </div>
       <div class="data-item">
         <div class="label">Coins e Loja <span class="db-tag">SQLite</span></div>
-        <div class="value">Saldo de moedas internas e itens adquiridos na loja do servidor</div>
+        <div class="value">Saldo de moedas internas, giros de roleta e itens adquiridos na loja do servidor</div>
       </div>
       <div class="data-item">
         <div class="label">Dados de Streamer <span class="db-tag">SQLite</span></div>
-        <div class="value">Perfil no sistema de filas de streamer e eventuais bloqueios</div>
+        <div class="value">Perfil no sistema de filas de streamer, fila atual, valores, regras e eventuais bloqueios</div>
       </div>
       <div class="data-item">
         <div class="label">Configuração do Servidor <span class="db-tag">MongoDB</span></div>
-        <div class="value">IDs de canais, cargos, cores e preferências configuradas pelo administrador</div>
+        <div class="value">IDs de canais, cargos, cores, textos e preferências configuradas pelo administrador</div>
       </div>
       <div class="data-item">
         <div class="label">Eventos do Bot <span class="db-tag">SQLite</span></div>
@@ -242,8 +242,8 @@
 
   <section>
     <h2><span class="num">09</span> Canal de Divulgação Automático</h2>
-    <p>Ao adicionar o bot, após um período inicial de espera, o MunhozFilas pode criar um canal de divulgação automático no servidor. Esse canal contém apenas informações públicas sobre o serviço e não coleta nenhum dado dos membros.</p>
-    <p>O administrador pode excluir esse canal a qualquer momento.</p>
+    <p>Ao adicionar o bot, após um período inicial de aproximadamente 30 minutos, o MunhozFilas pode criar um canal de divulgação automático (<strong>🩵・crie-sua-org-grátis</strong>) no servidor. Esse canal contém apenas informações públicas sobre o serviço e não coleta nenhum dado dos membros.</p>
+    <p>O administrador pode excluir esse canal a qualquer momento sem impacto no funcionamento do bot.</p>
   </section>
 
   <hr class="divider">
